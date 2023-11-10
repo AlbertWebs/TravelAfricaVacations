@@ -445,7 +445,7 @@
     </div>
  </div>
 
- <div class="destination-section5 overflow-hidden">
+ <div class="destination-section5 overflow-hidden pt-120 pb-120">
     <div class="container">
        <div class="row justify-content-center">
           <div class="col-xl-8 col-lg-10 col-md-12">

@@ -30,6 +30,10 @@ class HomeController extends Controller
     {
         return view('front.destination');
     }
+    public function contact()
+    {
+        return view('front.contact');
+    }
 
 
 }
