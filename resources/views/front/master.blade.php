@@ -98,8 +98,8 @@
                <li class="menu-item-has-children">
                   <a href="blog-grid.html">Resources</a><i class="bi bi-chevron-down dropdown-icon"></i>
                   <ul class="sub-menu">
-                     <li><a href="#">Travel Guide</a></li>
-                     <li><a href="#">Blogs & Media</a></li>
+                     <li><a href="{{url('/')}}/travel-guide">Travel Guide</a></li>
+                     <li><a href="{{url('/')}}/blog">Blogs & Media</a></li>
                      <li><a href="{{url('/')}}/conferencing">Conferencing</a></li>
 
                   </ul>

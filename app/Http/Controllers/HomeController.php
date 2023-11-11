@@ -55,5 +55,16 @@ class HomeController extends Controller
         return view('front.guide');
     }
 
+    public function copyright()
+    {
+        return view('front.copyright');
+    }
+
+    public function policy()
+    {
+        return view('front.privacy');
+    }
+
+
 
 }

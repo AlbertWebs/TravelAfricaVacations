@@ -5078,7 +5078,7 @@ form.style-1 .form-inner .banner-form-box.sibling-2 .banner-form .searchbox-inpu
     background-image: url(../images/bg/inner-banner-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 650px
+    min-height: 350px
 }
 
 @media(min-width:1200px)and (max-width:1399px) {
@@ -7849,7 +7849,7 @@ form.style-1 .form-inner textarea {
 }
 
 .footer-section {
-    background-image: linear-gradient(rgba(9, 16, 13, 0.88), rgba(9, 16, 13, 0.88)), url("../images/bg/footer1-bg.png");
+    background-image: linear-gradient(rgba(9, 16, 13, 0.88), rgba(9, 16, 13, 0.88)), url("../images/bg/pexels-roger-brown-5127543.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;

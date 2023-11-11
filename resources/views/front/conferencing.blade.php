@@ -1,7 +1,7 @@
 @extends('front.master')
 
 @section('content')
-<div class="inner-banner-section" style="background-image: url('{{asset('uploads/banners/conferencing.jpg')}}'); background-size: cover; background-repeat: no-repeat; min-height: 650px;">
+<div class="inner-banner-section" style="background-image: url('{{asset('uploads/banners/conferencing.jpg')}}'); background-size: cover; background-repeat: no-repeat; min-height: 350px;">
     <img src="{{asset('theme/assets/images/bg/inner-banner-vctr.png')}}" class="inner-banner-vector" alt="image">
     <div class="container">
        <div class="row justify-content-center">

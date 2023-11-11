@@ -26,8 +26,8 @@
                            <li><a href="{{url('/')}}/travel-guide">Travel Guide</a></li>
                            <li><a href="{{url('/')}}/conferencing">Conferencing</a></li>
                            <li><a href="#">Become Partner</a></li>
-                           <li><a href="#">Help & Support</a></li>
-                           <li><a href="#">Contact Us</a></li>
+                           <li><a href="{{url('/terms-and-conditions')}}">Terms and Conditions</a></li>
+                           <li><a href="{{url('/contact-us')}}">Contact Us</a></li>
                         </ul>
                      </div>
                   </div>
@@ -107,8 +107,8 @@
                   </div>
                   <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
                      <ul class="f-bottom-list d-flex jusify-content-start align-items-center">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="{{url('/')}}/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="{{url('/')}}/copyright-statement">Copyright Statement</a></li>
                      </ul>
                   </div>
                </div>
