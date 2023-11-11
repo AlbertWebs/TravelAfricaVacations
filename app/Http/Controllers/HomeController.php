@@ -35,5 +35,13 @@ class HomeController extends Controller
         return view('front.contact');
     }
 
+    public function blog()
+    {
+        return view('front.blog');
+    }
 
+    public function destinations()
+    {
+        return view('front.destinations');
+    }
 }

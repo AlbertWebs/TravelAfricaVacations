@@ -2,13 +2,13 @@
 
 @section('content')
 <div class="inner-banner-section">
-    <img src="assets/images/bg/inner-banner-vctr.png" class="inner-banner-vector" alt="image">
+    <img src="{{asset('theme/assets/images/bg/inner-banner-vctr.png')}}" class="inner-banner-vector" alt="image">
     <div class="container">
        <div class="row justify-content-center">
           <div class="col-xl-8 col-md-10 col-sm-12">
              <div class="breadcrumb-area">
                 <span>Get in Touch</span>
-                <h2>Let’s have a talk together</h2>
+                <h2>Let’s have a talk</h2>
              </div>
           </div>
        </div>
@@ -19,8 +19,8 @@
        <div class="row justify-content-center">
           <div class="col-lg-7 col-md-10 col-sm-12">
              <div class="info-title-area">
-                <h3>Astrip Travel Agency Inc.</h3>
-                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+                <h3>Travel Africa Vacations</h3>
+                <p>With budget-friendly and tailor-made packages we can arrange your tour to your specifications to ensure comfort, satisfaction and a thrilling adventure.</p>
              </div>
           </div>
        </div>
@@ -32,7 +32,8 @@
                 </div>
                 <div class="info-text">
                    <h3>Address</h3>
-                   <p>168/170, Ave 01,Old York Drive Rich Dhaka, Bangladesh</p>
+                   <p>
+                    Chalbi Condomononiums, Ring Road, Kilimani</p>
                 </div>
              </div>
           </div>
@@ -43,8 +44,8 @@
                 </div>
                 <div class="info-text">
                    <h3>Call Us!</h3>
-                   <a href="tel:+8801569862560">+88 0156 986 2560</a>
-                   <a href="tel:+8801761111456">+880176 1111 456</a>
+                   <a href="tel:+254 733 263 685">+254 733 263 685</a>
+                   <a href="tel:+254 733 263 685">+254 733 263 685</a>
                 </div>
              </div>
           </div>
@@ -55,59 +56,18 @@
                 </div>
                 <div class="info-text">
                    <h3>Email Info</h3>
-                   <a href="https://demo.egenslab.com/cdn-cgi/l/email-protection#c5acaba3aa85a6aaa8b5a4abbcaba4a8a0f4f7f6eba6aaa8"><span class="__cf_email__" data-cfemail="1c75727a735c7f73716c7d7265727d71792d2e2f327f7371">[email&#160;protected]</span></a>
-                   <a href="https://demo.egenslab.com/cdn-cgi/l/email-protection#5e373038311e3b263f332e323b703d3133"><span class="__cf_email__" data-cfemail="bad3d4dcd5fadfc2dbd7cad6df94d9d5d7">[email&#160;protected]</span></a>
+                   <a href="mailto:info@travelafricavacations.com"><span class="__cf_email__" >info@travelafricavacations.com</span></a>
+                   <a href="https://travelafricavacations.com"><span class="__cf_email__">travelafricavacations.com</span></a>
                 </div>
              </div>
           </div>
        </div>
     </div>
  </div>
- <div class="contact-section pb-120">
-    <div class="container">
-       <div class="row justify-content-center">
-          <div class="col-md-6 text-center">
-             <div class="section-title1">
-                <span>Reservation Form</span>
-                <h2>Let’s Get in Touch</h2>
-                <img src="assets/images/icons/section-title-vector.svg" alt="image">
-             </div>
-          </div>
-       </div>
-       <div class="row">
-          <div class="col-12">
-             <div class="contact-from-wrapper">
-                <form>
-                   <div class="row">
-                      <div class="col-lg-6">
-                         <div class="form-inner">
-                            <input type="text" placeholder="Your Name:">
-                         </div>
-                      </div>
-                      <div class="col-lg-6">
-                         <div class="form-inner">
-                            <input type="text" placeholder="Your Phone Number:">
-                         </div>
-                      </div>
-                      <div class="col-lg-12">
-                         <div class="form-inner">
-                            <input type="text" placeholder="Type Your Subject:">
-                         </div>
-                      </div>
-                      <div class="col-lg-12">
-                         <div class="form-inner">
-                            <textarea name="message" rows="5" placeholder="Type Your Message..."></textarea>
-                         </div>
-                      </div>
-                      <div class="col-lg-12">
-                         <button type="submit" class="eg-btn btn--primary btn--lg submit-btn">Submit Now</button>
-                      </div>
-                   </div>
-                </form>
-             </div>
-          </div>
-       </div>
-    </div>
+ <div class="contact-section" style=" line-height: 0; ">
+     {{--  --}}
+     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.215498768983!2d36.8219462!3d-1.2920659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11e84e4c04cd%3A0xc3ebaf3af05591a0!2sTravel%20Africa%20Vacations!5e0!3m2!1sen!2ske!4v1699695666915!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     {{--  --}}
  </div>
 
 @endsection

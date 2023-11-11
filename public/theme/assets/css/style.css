@@ -13007,7 +13007,7 @@ h3.tour-details-subtitle {
 .nav-pills .nav-link {
     border-radius: 0;
     border-right: 1px solid #eee;
-    min-width: 168px
+    min-width: 33.33%;
 }
 
 @media(min-width:1200px)and (max-width:1399px) {
