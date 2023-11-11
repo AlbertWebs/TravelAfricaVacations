@@ -23,8 +23,8 @@
                      <div class="footer-item">
                         <h4>Information</h4>
                         <ul class="link-list">
-                           <li><a href="#">Travel Guide</a></li>
-                           <li><a href="#">conferences</a></li>
+                           <li><a href="{{url('/')}}/travel-guide">Travel Guide</a></li>
+                           <li><a href="{{url('/')}}/conferencing">Conferencing</a></li>
                            <li><a href="#">Become Partner</a></li>
                            <li><a href="#">Help & Support</a></li>
                            <li><a href="#">Contact Us</a></li>

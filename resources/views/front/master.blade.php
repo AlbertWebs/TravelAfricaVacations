@@ -100,7 +100,8 @@
                   <ul class="sub-menu">
                      <li><a href="#">Travel Guide</a></li>
                      <li><a href="#">Blogs & Media</a></li>
-                     <li><a href="#">Gallery</a></li>
+                     <li><a href="{{url('/')}}/conferencing">Conferencing</a></li>
+
                   </ul>
                </li>
                <li><a href="{{url('/')}}/contact-us">Contact Us</a></li>

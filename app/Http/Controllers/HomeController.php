@@ -44,4 +44,16 @@ class HomeController extends Controller
     {
         return view('front.destinations');
     }
+
+    public function conferencing()
+    {
+        return view('front.conferencing');
+    }
+
+    public function guide()
+    {
+        return view('front.guide');
+    }
+
+
 }
