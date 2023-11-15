@@ -130,7 +130,7 @@ use App\Event;
 
 use App\Destination;
 
-use App\Experience;
+use App\Models\Experience;
 
 use App\Guide;
 
@@ -3746,7 +3746,7 @@ public function add_Experience(Request $request){
     $Fuel->save();
     }
 
-    $Experience = new \App\Models\Experience;
+    $Experience = new Experience;
     $Experience->title = $request->title;
     $Experience->slung =  Str::slug($request->title);
     $Experience->location = $request->location;
