@@ -3741,7 +3741,7 @@ public function add_Experience(Request $request){
     $CheckLocations = DB::table('locations')->where('name',$request->location)->get();
     if(count($CheckLocations) == 0){
     // Add Model
-    $Fuel = new Location;
+    $Fuel = new \App\Models\Location;
     $Fuel->name = $request->location;
     $Fuel->save();
     }
@@ -3749,13 +3749,13 @@ public function add_Experience(Request $request){
     $CheckDuration = DB::table('durations')->where('name',$request->duration)->get();
     if(count($CheckDuration) == 0){
     // Add Model
-    $Fuel = new Duration;
+    $Fuel = new \App\Models\Duration;
     $Fuel->name = $request->duration;
     $Fuel->save();
     }
     $slung = str_slug($request->title);
 
-    $Experience = new Experience;
+    $Experience = new \App\Models\Experience;
     $Experience->title = $request->title;
     $Experience->slung =  Str::slug($request->title);
     $Experience->location = $request->location;
