@@ -3746,9 +3746,6 @@ public function add_Experience(Request $request){
     $Fuel->save();
     }
 
-
-    $slung = str_slug($request->title);
-
     $Experience = new \App\Models\Experience;
     $Experience->title = $request->title;
     $Experience->slung =  Str::slug($request->title);
