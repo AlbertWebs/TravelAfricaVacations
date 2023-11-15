@@ -3746,13 +3746,7 @@ public function add_Experience(Request $request){
     $Fuel->save();
     }
 
-    $CheckDuration = DB::table('durations')->where('name',$request->duration)->get();
-    if(count($CheckDuration) == 0){
-    // Add Model
-    $Fuel = new \App\Models\Duration;
-    $Fuel->name = $request->duration;
-    $Fuel->save();
-    }
+
     $slung = str_slug($request->title);
 
     $Experience = new \App\Models\Experience;
