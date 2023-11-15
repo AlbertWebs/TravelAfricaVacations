@@ -28,6 +28,8 @@ use App\Country;
 
 use App\Models;
 
+use App\Location;
+
 use App\Models\Extra;
 
 use App\Transfer;
@@ -42,7 +44,7 @@ use App\Duration;
 
 use App\Models\Sample;
 
-use App\Location;
+// use App\Location;
 
 use App\Car;
 
