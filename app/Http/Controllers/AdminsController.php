@@ -52,7 +52,7 @@ use App\Fuel;
 
 use App\Gallery;
 
-use App\Itinery;
+use App\Models\Itinery;
 
 use App\Admin;
 
