@@ -34,9 +34,10 @@ class HomeController extends Controller
         return view('front.index', compact('Experiences'));
     }
 
-    public function destination()
+    public function destination($slung)
     {
-        return view('front.destination');
+        $Experiences = DB::table('experiences')->where('slung',$slung)->get();
+        return view('front.destination', compact('Experiences'));
     }
     public function contact()
     {

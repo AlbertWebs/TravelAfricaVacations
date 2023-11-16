@@ -1,24 +1,25 @@
 @extends('front.master')
 
 @section('content')
+@foreach ($Experiences as $Ex)
 {{--  --}}
-<div class="inner-banner-section sibling-2">
+<div class="inner-banner-section sibling-2" style="background-image: url('{{url('/')}}/uploads/experiences/{{$Ex->image_one}}'); background-size: cover; background-repeat: no-repeat; min-height: 350px;">
     <img src="{{asset('theme/assets/images/bg/inner-banner-vctr.png')}}" class="inner-banner-vector" alt="image">
     <div class="container">
        <div class="row justify-content-center">
           <div class="col-xl-8 col-md-10 col-sm-12">
              <div class="breadcrumb-area">
-                <span>Amazing Tour</span>
-                <h2>The Colosseum, Rome.</h2>
+                <span>{{$Ex->duration}}</span>
+                <h2>{{$Ex->title}}</h2>
                 <div class="review-area">
-                   <ul class="star-list">
+                   {{-- <ul class="star-list">
                       <li><i class="bi bi-star-fill"></i></li>
                       <li><i class="bi bi-star-fill"></i></li>
                       <li><i class="bi bi-star-fill"></i></li>
                       <li><i class="bi bi-star-fill"></i></li>
                       <li><i class="bi bi-star-half"></i></li>
                    </ul>
-                   <span>(10 Review)</span>
+                   <span>(10 Review)</span> --}}
                 </div>
              </div>
           </div>
@@ -78,198 +79,122 @@
                             <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                                <path d="M14 7C14 8.85652 13.2625 10.637 11.9497 11.9497C10.637 13.2625 8.85652 14 7 14C5.14348 14 3.36301 13.2625 2.05025 11.9497C0.737498 10.637 0 8.85652 0 7C0 5.14348 0.737498 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 0 7 0C8.85652 0 10.637 0.737498 11.9497 2.05025C13.2625 3.36301 14 5.14348 14 7ZM7 3.0625C7 2.94647 6.95391 2.83519 6.87186 2.75314C6.78981 2.67109 6.67853 2.625 6.5625 2.625C6.44647 2.625 6.33519 2.67109 6.25314 2.75314C6.17109 2.83519 6.125 2.94647 6.125 3.0625V7.875C6.12502 7.95212 6.14543 8.02785 6.18415 8.09454C6.22288 8.16123 6.27854 8.2165 6.3455 8.25475L9.408 10.0048C9.5085 10.0591 9.62626 10.0719 9.73611 10.0406C9.84596 10.0092 9.93919 9.93611 9.99587 9.83692C10.0525 9.73774 10.0682 9.62031 10.0394 9.50975C10.0107 9.39919 9.93982 9.30426 9.842 9.24525L7 7.62125V3.0625Z" />
                             </svg>
-                            4 Days / 5 Night
+                            {{$Ex->duration}}
                          </li>
                          <li>
                             <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                                <path d="M7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7ZM14 12.8333C14 14 12.8333 14 12.8333 14H1.16667C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333Z" />
                             </svg>
-                            Max People : 100
+                            Max People : flexible
                          </li>
                          <li>
                             <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 0.43748C14 0.372778 13.9856 0.308889 13.9579 0.250418C13.9302 0.191947 13.8898 0.140348 13.8398 0.0993396C13.7897 0.0583312 13.7312 0.0289339 13.6684 0.0132656C13.6057 -0.00240264 13.5402 -0.00395173 13.4768 0.00872996L9.1875 0.86623L4.89825 0.00872996C4.84164 -0.00258444 4.78336 -0.00258444 4.72675 0.00872996L0.35175 0.88373C0.252608 0.903546 0.163389 0.957088 0.099263 1.03525C0.0351366 1.11342 6.10593e-05 1.21138 0 1.31248L0 13.5625C3.90711e-05 13.6272 0.0144289 13.6911 0.0421328 13.7495C0.0698367 13.808 0.110165 13.8596 0.160212 13.9006C0.210259 13.9416 0.268779 13.971 0.331556 13.9867C0.394332 14.0024 0.459803 14.0039 0.52325 13.9912L4.8125 13.1337L9.10175 13.9912C9.15836 14.0025 9.21664 14.0025 9.27325 13.9912L13.6482 13.1162C13.7474 13.0964 13.8366 13.0429 13.9007 12.9647C13.9649 12.8865 13.9999 12.7886 14 12.6875V0.43748ZM4.375 12.3287V0.97123L4.8125 0.88373L5.25 0.97123V12.3287L4.89825 12.2587C4.84165 12.2474 4.78335 12.2474 4.72675 12.2587L4.375 12.3287ZM8.75 13.0287V1.67123L9.10175 1.74123C9.15836 1.75254 9.21664 1.75254 9.27325 1.74123L9.625 1.67123V13.0287L9.1875 13.1162L8.75 13.0287Z" />
                             </svg>
-                            Rome
+                            {{$Ex->location}}
                          </li>
                       </ul>
-                      <p>The Flavian Amphitheater, better known to the world as the Colosseum, is the most universally recognized icon in Rome. You can explore this popular tourist attraction on your own or take a guided tour for more information and the opportunity to ask questions as you go along.</p>
-                      <p>Despite damage by fire, earthquake, and neglect, as well as its conversion into a fortress of the Frangipani family, the pillaging of its stone for construction of palaces,</p>
-                      <div class="tour-info-list-area">
-                         <ul class="info-list-1">
-                            <li><span>Destination</span><span>The Italy</span></li>
-                            <li><span>Departure/Return Location</span><span>Rome F.K. International Airport</span></li>
-                            <li><span>Departure Time</span><span>Please arrive by 9:15 AM for a departure at 9:30 AM</span></li>
-                            <li><span>Return Time</span><span>Approximately 10:30 PM</span></li>
-                            <li><span>Dress Code</span><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></li>
-                         </ul>
-                         <ul class="info-list-1">
-                            <li>
-                               <span>Package Included</span>
-                               <ul class="info-sublist">
-                                  <li><i class="bx bx-check"></i>5 Star Accommodation</li>
-                                  <li><i class="bx bx-check"></i>Airport Transfers</li>
-                                  <li><i class="bx bx-check"></i>Entrance Fees</li>
-                                  <li><i class="bx bx-check"></i>Box Lunch, Dinner & Snacks.</li>
-                               </ul>
-                            </li>
-                         </ul>
-                         <ul class="info-list-1">
-                            <li>
-                               <span>Package Excludes</span>
-                               <ul class="info-sublist">
-                                  <li><i class="bx bx-x"></i>Additional Services</li>
-                                  <li><i class="bx bx-x"></i>Insurance</li>
-                                  <li><i class="bx bx-x"></i>Transport</li>
-                                  <li><i class="bx bx-x"></i>Entry Fees</li>
-                                  <li><i class="bx bx-x"></i>Any Private Expenses</li>
-                               </ul>
-                            </li>
-                         </ul>
-                      </div>
-                      <p>The largest structure surviving from ancient Rome, the Colosseum was begun by Vespasian in AD 72, and eight years later enlarged by his son, Titus, adding the fourth story. The name of the Colosseum derived from the immense statue of Nero-called the colossus after the Colossus</p>
-                      <div class="row details-img-group justify-content-center g-4">
-                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-                            <img src="{{asset('theme/assets/images/blog/blog-details-img2.png')}}" class="img-fluid" alt="image">
-                         </div>
-                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-                            <img src="{{asset('theme/assets/images/blog/blog-details-img3.png')}}" class="img-fluid" alt="image">
-                         </div>
-                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-                            <img src="{{asset('theme/assets/images/blog/blog-details-img4.png')}}" class="img-fluid" alt="image">
-                         </div>
-                      </div>
+                      <p>
+                        {!!html_entity_decode($Ex->content)!!}
+                      </p>
                    </div>
                 </div>
                 <div class="tab-pane fade" id="v-pills-plan" role="tabpanel" aria-labelledby="v-pills-plan-tab">
                    <div class="tour-plan">
-                      <h3 class="tour-details-subtitle">Tour Plan</h3>
+                      <h3 class="tour-details-subtitle">Itinery</h3>
+                      <?php
+                            $Itinery = DB::table('itineries')->where('product_id',$Ex->id)->get();
+                            $num = 1;
+                      ?>
+                      @foreach ($Itinery as $it)
                       <div class="tour-plan-single">
-                         <div class="plan-serial">
-                            <span>01</span>
-                         </div>
-                         <div class="plan-content">
-                            <h4 class="plan-title">Day 01 : Departure</h4>
-                            <p>Arrive Cairo airport, welcome greeting by our representative who will assist you and provide tra nsfers to your Hotel in Cairo. (the clients will inform us about their arrival time minimum 7 days before the</p>
-                            <ul class="plan-list">
-                               <li>Admire Big Ben, Buckingham Palace and St Paul’s Cathedral</li>
-                               <li>Chance to spot prominent landmarks of the city</li>
-                            </ul>
-                         </div>
-                      </div>
-                      <div class="tour-plan-single">
-                         <div class="plan-serial">
-                            <span>02</span>
-                         </div>
-                         <div class="plan-content">
-                            <h4 class="plan-title">Day 02 : Adventure Beggins</h4>
-                            <p>Arrive Cairo airport, welcome greeting by our representative who will assist you and provide tra nsfers to your Hotel in Cairo. (the clients will inform us about their arrival time minimum 7 days before the</p>
-                            <ul class="plan-list">
-                               <li>Admire Big Ben, Buckingham Palace and St Paul’s Cathedral</li>
-                               <li>Chance to spot prominent landmarks of the city</li>
-                               <li>welcome greeting by our representative </li>
-                            </ul>
-                         </div>
-                      </div>
-                      <div class="tour-plan-single">
-                         <div class="plan-serial">
-                            <span>03</span>
-                         </div>
-                         <div class="plan-content">
-                            <h4 class="plan-title">Day 03 : Historical Tour</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                         </div>
-                      </div>
-                      <div class="tour-plan-single">
-                         <div class="plan-serial">
-                            <span>04</span>
-                         </div>
-                         <div class="plan-content">
-                            <h4 class="plan-title">Day 04 : Rest & Tour</h4>
-                            <p>Please go to the London Eye ticket office to exchange your voucher for a ticket. You may be ask ed for identification (driver's license, national identity card or passport). You will receive tickets for the next available time slot, but you may request a different date or time, subject to availability.</p>
-                            <p>The following items are not permitted: alcohol, baseball bats, bicycles (including folding ones), explosives For all ticket holders, the number of people per capsule may vary.</p>
-                         </div>
-                      </div>
-                      <div class="tour-plan-single">
-                         <div class="plan-serial">
-                            <span>05</span>
-                         </div>
-                         <div class="plan-content">
-                            <h4 class="plan-title">Day 05 : Return</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                         </div>
-                      </div>
+                        <div class="plan-serial">
+                           <span>0{{$num}}</span>
+                        </div>
+                        <div class="plan-content">
+                           <h4 class="plan-title">{{$it->day}}</h4>
+                           <p>
+                            {!!html_entity_decode($it->content)!!}
+                           </p>
+                        </div>
+                     </div>
+                     <?php $num = $num+1; ?>
+                      @endforeach
                    </div>
                 </div>
-                <div class="tab-pane fade" id="v-pills-location" role="tabpanel" aria-labelledby="v-pills-location-tab">
-                   <div class="tour-location">
-                      <h3 class="tour-details-subtitle">Location Map</h3>
-                      <div class="map-area">
-                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193325.0481540361!2d-74.06757856146028!3d40.79052383652264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1660366711448!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                      </div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                      <p> It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                   </div>
-                </div>
+
                 <div class="tab-pane fade" id="v-pills-gallery" role="tabpanel" aria-labelledby="v-pills-gallery-tab">
                    <div class="tour-gallery-wrap">
-                      <h3 class="tour-details-subtitle">Astrip Travel Gallery</h3>
+                      <h3 class="tour-details-subtitle">{{$Ex->title}} Gallery</h3>
                       <div class="row g-4 justify-content-center">
                          <div class="col-xxl-4 col-xl-4 col-lg-4 col-sm-4 col-6">
-                            <div class="tour-gallery">
-                               <a href="assets/images/gallery/tour-gallery1.png')}}" class="image-open">
-                               <img src="{{asset('theme/assets/images/gallery/tour-gallery1.png')}}" class="img-fluid" alt="image">
-                               </a>
-                            </div>
-                            <div class="tour-gallery">
-                               <a href="assets/images/gallery/tour-gallery2.png')}}" class="image-open">
-                               <img src="{{asset('theme/assets/images/gallery/tour-gallery2.png')}}" class="img-fluid" alt="image">
-                               </a>
-                            </div>
-                            <div class="tour-gallery">
-                               <a href="assets/images/gallery/tour-gallery3.png')}}" class="image-open">
-                               <img src="{{asset('theme/assets/images/gallery/tour-gallery3.png')}}" class="img-fluid" alt="image">
-                               </a>
-                            </div>
+                            @if($Ex->image_one == "0" OR $Ex->image_one == null)
+
+                            @else
+                                <div class="tour-gallery">
+                                    <a href="{{url('/')}}/uploads/experiences/{{$Ex->image_one}}" class="image-open">
+                                      <img src="{{url('/')}}/uploads/experiences/{{$Ex->image_one}}" class="img-fluid" alt="image">
+                                    </a>
+                                </div>
+                            @endif
+
+
+
+
+                            @if($Ex->image_four == "0" OR $Ex->image_four == null)
+
+                            @else
+                                <div class="tour-gallery">
+                                    <a href="{{url('/')}}/uploads/experiences/{{$Ex->image_four}}" class="image-open">
+                                      <img src="{{url('/')}}/uploads/experiences/{{$Ex->image_four}}" class="img-fluid" alt="image">
+                                    </a>
+                                </div>
+                            @endif
+
                          </div>
                          <div class="col-xxl-4 col-xl-4 col-lg-4 col-sm-4 col-6">
-                            <div class="tour-gallery">
-                               <a href="assets/images/gallery/tour-gallery4.png')}}" class="image-open">
-                               <img src="{{asset('theme/assets/images/gallery/tour-gallery4.png')}}" class="img-fluid" alt="image">
-                               </a>
-                            </div>
-                            <div class="tour-gallery">
-                               <a href="assets/images/gallery/tour-gallery5.png')}}" class="image-open">
-                               <img src="{{asset('theme/assets/images/gallery/tour-gallery5.png')}}" class="img-fluid" alt="image">
-                               </a>
-                            </div>
-                            <div class="tour-gallery">
-                               <a href="assets/images/gallery/tour-gallery6.png')}}" class="image-open">
-                               <img src="{{asset('theme/assets/images/gallery/tour-gallery6.png')}}" class="img-fluid" alt="image">
-                               </a>
-                            </div>
-                            <div class="tour-gallery">
-                               <a href="assets/images/gallery/tour-gallery7.png')}}" class="image-open">
-                               <img src="{{asset('theme/assets/images/gallery/tour-gallery7.png')}}" class="img-fluid" alt="image">
-                               </a>
-                            </div>
+                            @if($Ex->image_two == "0" OR $Ex->image_two == null)
+
+                            @else
+                                <div class="tour-gallery">
+                                    <a href="{{url('/')}}/uploads/experiences/{{$Ex->image_two}}" class="image-open">
+                                      <img src="{{url('/')}}/uploads/experiences/{{$Ex->image_two}}" class="img-fluid" alt="image">
+                                    </a>
+                                </div>
+                            @endif
+
+                            @if($Ex->image_five == "0" OR $Ex->image_five == null)
+
+                            @else
+                                <div class="tour-gallery">
+                                    <a href="{{url('/')}}/uploads/experiences/{{$Ex->image_two}}" class="image-open">
+                                      <img src="{{url('/')}}/uploads/experiences/{{$Ex->image_two}}" class="img-fluid" alt="image">
+                                    </a>
+                                </div>
+                            @endif
+
                          </div>
                          <div class="col-xxl-4 col-xl-4 col-lg-4 col-sm-4 col-6">
-                            <div class="tour-gallery">
-                               <a href="assets/images/gallery/tour-gallery8.png')}}" class="image-open">
-                               <img src="{{asset('theme/assets/images/gallery/tour-gallery8.png')}}" class="img-fluid" alt="image">
-                               </a>
-                            </div>
-                            <div class="tour-gallery">
-                               <a href="assets/images/gallery/tour-gallery9.png')}}" class="image-open">
-                               <img src="{{asset('theme/assets/images/gallery/tour-gallery9.png')}}" class="img-fluid" alt="image">
-                               </a>
-                            </div>
-                            <div class="tour-gallery">
-                               <a href="assets/images/gallery/tour-gallery10.png')}}" class="image-open">
-                               <img src="{{asset('theme/assets/images/gallery/tour-gallery10.png')}}" class="img-fluid" alt="image">
-                               </a>
-                            </div>
+                            @if($Ex->image_three == "0" OR $Ex->image_three == null)
+
+                            @else
+                                <div class="tour-gallery">
+                                    <a href="{{url('/')}}/uploads/experiences/{{$Ex->image_three}}" class="image-open">
+                                      <img src="{{url('/')}}/uploads/experiences/{{$Ex->image_three}}" class="img-fluid" alt="image">
+                                    </a>
+                                </div>
+                            @endif
+
+                            @if($Ex->image_six == "0" OR $Ex->image_six == null)
+
+                            @else
+                                <div class="tour-gallery">
+                                    <a href="{{url('/')}}/uploads/experiences/{{$Ex->image_six}}" class="image-open">
+                                      <img src="{{url('/')}}/uploads/experiences/{{$Ex->image_six}}" class="img-fluid" alt="image">
+                                    </a>
+                                </div>
+                            @endif
+
                          </div>
                       </div>
                    </div>
@@ -629,4 +554,5 @@
     </div>
  </div>
 {{--  --}}
+@endforeach
 @endsection
