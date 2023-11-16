@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 class HomeController extends Controller
 {
@@ -29,7 +30,8 @@ class HomeController extends Controller
      }
     public function index()
     {
-        return view('front.index');
+        $Experiences = DB::table('experiences')->limit('12')->get();
+        return view('front.index', compact('Experiences'));
     }
 
     public function destination()
