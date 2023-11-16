@@ -101,7 +101,7 @@
                     <div class="col-lg-8">
                         <select name="product_id" data-placeholder="Select Category" class="form-control chzn-select" tabindex="2">
 
-                           <?php $TheCategoryList = DB::table('samples')->orderBy('id','DESC')->get(); ?>
+                           <?php $TheCategoryList = DB::table('experiences')->orderBy('id','DESC')->get(); ?>
                            @foreach($TheCategoryList as $value)
                               <option value="{{$value->id}}">{{$value->title}}</option>
                            @endforeach
