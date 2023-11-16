@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="wrap" >
-        
+
 
         <!-- HEADER SECTION -->
         @include('admin.top')
@@ -18,7 +18,7 @@
 
         <!--PAGE CONTENT -->
         <div id="content">
-             
+
             <div class="inner" style="min-height: 700px;">
                 <div class="row">
                     <div class="col-lg-12 text-center">
@@ -36,12 +36,12 @@
                 </div>
                   <!--END BLOCK SECTION -->
                 <hr />
-                  
-               
+
+
                   <!-- Inner Content Here -->
-                 
+
             <div class="inner">
-                
+
 
               <div class="row">
                <center>
@@ -53,10 +53,10 @@
 							   <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
 				@endif
                  </center>
-                 
+
 
                  <form class="form-horizontal" method="post"  action="{{url('/admin/add_Itinery')}}" enctype="multipart/form-data">
-                    
+
                  <div class="form-group">
                         <label for="text1" class="control-label col-lg-4">Day</label>
 
@@ -65,8 +65,8 @@
                         </div>
                     </div>
 
-                   
-                    
+
+
                     @if($keyword == 'Destination')
                    <!-- Swap Between Experience or Destination -->
                    <input type="hidden" name="type" value="Destination">
@@ -74,13 +74,13 @@
                     <div class="form-group">
                     <label class="control-label col-lg-4">Destination</label>
 
-                    
-                        
+
+
 
                     <div class="col-lg-8">
                         <select name="product_id" data-placeholder="Select Category" class="form-control chzn-select" tabindex="2">
-                          
-                           <?php $TheCategoryList = DB::table('samples')->get(); ?>
+
+                           <?php $TheCategoryList = DB::table('experiences')->get(); ?>
                            @foreach($TheCategoryList as $value)
                               <option value="{{$value->id}}">{{$value->title}}</option>
                            @endforeach
@@ -95,12 +95,12 @@
                   <div class="form-group">
                     <label class="control-label col-lg-4">Experiences</label>
 
-                    
-                        
+
+
 
                     <div class="col-lg-8">
                         <select name="product_id" data-placeholder="Select Category" class="form-control chzn-select" tabindex="2">
-                          
+
                            <?php $TheCategoryList = DB::table('samples')->orderBy('id','DESC')->get(); ?>
                            @foreach($TheCategoryList as $value)
                               <option value="{{$value->id}}">{{$value->title}}</option>
@@ -111,12 +111,12 @@
                     </div>
                     @endif
 
-                    
 
-                   
 
-                  
-          
+
+
+
+
                         <div class="col-lg-12">
                             <div class="box">
                                 <header>
@@ -138,14 +138,14 @@
                                     </ul>
                                 </header>
                                 <div id="div-1" class="body collapse in">
-                                    
+
                                         <textarea name="content" id="wysihtml5" class="form-control" rows="10"></textarea>
 
-                                    
+
                                 </div>
                             </div>
                         </div>
-                   
+
                     <center>
                     <div class="form-group col-lg-12">
                     <div class="form-group col-lg-6">
@@ -176,17 +176,17 @@
                         </div>
                     </div>
 
-                  
+
                     </div>
                     </center>
                     <br><br>
                     <div class="col-lg-12 text-center">
                       <button type="submit" class="btn btn-success"><i class="icon-plus icon-white"></i> Add Itineraries</button>
                     </div>
-                    
-                    
+
+
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    
+
                 <form>
               </div>
 
@@ -195,7 +195,7 @@
 
 
 
-                
+
             </div>
 
         </div>
