@@ -98,7 +98,7 @@
         effect: "fade",
         fadeEffect: { crossFade: true },
         autoplay: true,
-        loop: true,
+        loop: false,
         pagination: {
             el: ".swiper-pagination-number",
             clickable: true,

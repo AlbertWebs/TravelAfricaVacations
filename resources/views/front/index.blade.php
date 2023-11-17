@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="banner-section5">
-    <div class="banner-social-area">
+    {{-- <div class="banner-social-area">
        <div class="text-white">1</div>
        <div class="swiper-pagination-number d-flex flex-column align-items-center gap-5"></div>
        <ul class="banner-social gap-4">
@@ -11,27 +11,19 @@
           <li><a href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a></li>
           <li><a href="https://www.linkedin.com/"><i class="bx bxl-linkedin"></i></a></li>
        </ul>
-    </div>
+    </div> --}}
     <div class="swiper banner5-slider">
        <div class="swiper-wrapper">
           <div class="swiper-slide">
              <img src="{{asset('theme/assets/images/slider/home05/image01.jpg')}}" class="banner-bg11" alt="image">
              <div class="banner5-content">
-                <span>Experience Wild Life</span>
-                <h2>Meet Our Awesome Safari</h2>
-                <p>Treat yourself with an unforgettable sailing experience. Grab a last minute bargain with one of our late cruise deals. </p>
+                <span>Experience Africa Vacations</span>
+                <h2>Leave Nothing But Your Footsteps</h2>
+                <p>As a premier travel company, we specialize in crafting unforgettable experiences that seamlessly blend adventure, luxury, and cultural immersion. Our passion for Africa's breathtaking landscapes, vibrant communities, and unique wildlife drives us to curate bespoke itineraries tailored to your preferences. </p>
                 <a href="{{url('/')}}/destination" class="eg-btn btn--primary3 btn--lg">Explore Safari</a>
              </div>
           </div>
-          <div class="swiper-slide">
-             <img src="{{asset('theme/assets/images/slider/home05/image02.jpg')}}" class="banner-bg11" alt="image">
-             <div class="banner5-content">
-                <span>Experience Wild Life</span>
-                <h2>Meet Our Awesome Safari</h2>
-                <p>Treat yourself with an unforgettable sailing experience. Grab a last minute bargain with one of our late cruise deals. </p>
-                <a href="{{url('/')}}/destination" class="eg-btn btn--primary3 btn--lg">Explore Safari</a>
-             </div>
-          </div>
+
        </div>
     </div>
  </div>
@@ -40,8 +32,8 @@
        <div class="row mb-60">
           <div class="col-md-8">
              <div class="about5-title">
-                <span>SAFARI TOUR</span>
-                <h2 class="mb-0">Best Wildlife Tour <span>Packages.</span></h2>
+                <span>WILDLIFE SAFARIS</span>
+                <h2 class="mb-0">Best Wildlife Safaris <span>Packages.</span></h2>
              </div>
           </div>
           <div class="col-md-4">
@@ -65,13 +57,13 @@
                       <img src="{{asset('theme/assets/images/bg/wild-p1.png')}}" class="wild-package-img" alt="image">
                       <div class="text">
                          <span>The Wolf</span>
-                         <h4><a href="tour-package-details.html">Kabini WIldlife</a></h4>
+                         <h4><a href="#">Kabini WIldlife</a></h4>
                       </div>
                       <div class="content-wrapper">
                          <div class="content">
                             <h4>Kabini WIldlife Safari</h4>
 
-                            <a href="contact.html" class="details-btn">Explore More</a>
+                            <a href="#" class="details-btn">Explore More</a>
                          </div>
                       </div>
                    </div>
@@ -80,14 +72,14 @@
                    <div class="wild-package-single">
                       <img src="{{asset('theme/assets/images/bg/wild-p2.png')}}" class="wild-package-img" alt="image">
                       <div class="text">
-                         <span>Tiger</span>
-                         <h4><a href="tour-package-details.html">Sariska Tiger</a></h4>
+                         <span>Cheetah</span>
+                         <h4><a href="#">Mara Cheetah</a></h4>
                       </div>
                       <div class="content-wrapper">
                          <div class="content">
-                            <h4>Sariska Tiger</h4>
+                            <h4>Mara Cheetah</h4>
 
-                            <a href="contact.html" class="details-btn">Explore More</a>
+                            <a href="#" class="details-btn">Explore More</a>
                          </div>
                       </div>
                    </div>
@@ -97,13 +89,13 @@
                       <img src="{{asset('theme/assets/images/bg/wild-p3.png')}}" class="wild-package-img" alt="image">
                       <div class="text">
                          <span>Lion</span>
-                         <h4><a href="tour-package-details.html">Bera Leopard</a></h4>
+                         <h4><a href="#">Mara Lion</a></h4>
                       </div>
                       <div class="content-wrapper">
                          <div class="content">
-                            <h4>Bera Leopard Safari</h4>
+                            <h4>Mara Lion</h4>
 
-                            <a href="contact.html" class="details-btn">Explore More</a>
+                            <a href="#" class="details-btn">Explore More</a>
                          </div>
                       </div>
                    </div>
@@ -113,13 +105,13 @@
                       <img src="{{asset('theme/assets/images/bg/wild-p4.png')}}" class="wild-package-img" alt="image">
                       <div class="text">
                          <span>Elephant</span>
-                         <h4><a href="tour-package-details.html">National Park</a></h4>
+                         <h4><a href="#">Best of Amboseli</a></h4>
                       </div>
                       <div class="content-wrapper">
                          <div class="content">
-                            <h4>National Park</h4>
+                            <h4>Best of Amboseli</h4>
 
-                            <a href="contact.html" class="details-btn">Explore More</a>
+                            <a href="#" class="details-btn">Explore More</a>
                          </div>
                       </div>
                    </div>
@@ -129,13 +121,13 @@
                       <img src="{{asset('theme/assets/images/bg/wild-p5.png')}}" class="wild-package-img" alt="image">
                       <div class="text">
                          <span>Monkey</span>
-                         <h4><a href="tour-package-details.html">Panna Monkey</a></h4>
+                         <h4><a href="#">Primate Lodges</a></h4>
                       </div>
                       <div class="content-wrapper">
                          <div class="content">
-                            <h4>Panna Monkey</h4>
+                            <h4>Primate Lodges</h4>
 
-                            <a href="contact.html" class="details-btn">Explore More</a>
+                            <a href="#" class="details-btn">Explore More</a>
                          </div>
                       </div>
                    </div>

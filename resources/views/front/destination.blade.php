@@ -527,28 +527,7 @@
                    <button class="eg-btn btn--primary btn--lg w-100 mt-3">BOOK NOW</button>
                 </form>
              </div>
-             <div class="sidebar-offer">
-                <div class="offer-badge">
-                   <img src="{{asset('theme/assets/images/icons/offer-badge.svg')}}" alt="image">
-                </div>
-                <div class="offer-content">
-                   <div class="review-area">
-                      <ul class="star-list">
-                         <li><i class="bi bi-star-fill"></i></li>
-                         <li><i class="bi bi-star-fill"></i></li>
-                         <li><i class="bi bi-star-fill"></i></li>
-                         <li><i class="bi bi-star-fill"></i></li>
-                         <li><i class="bi bi-star-half"></i></li>
-                      </ul>
-                      <span>(10 Review)</span>
-                   </div>
-                   <h4><a href="tour-package-details.html">Aegean Adventure Cruise</a></h4>
-                   <div class="price">
-                      <span>03 days / from $2500</span>
-                   </div>
-                </div>
-                <img src="{{asset('theme/assets/images/bg/sidebar-offer.png')}}" class="img-fluid" alt="image">
-             </div>
+
           </div>
        </div>
     </div>
