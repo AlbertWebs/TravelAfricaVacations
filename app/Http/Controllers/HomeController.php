@@ -54,6 +54,18 @@ class HomeController extends Controller
         return view('front.destinations');
     }
 
+    public function tanzania()
+    {
+        $Experiences = DB::table('experiences')->limit('12')->get();
+        return view('front.tanzania' , compact('Experiences'));
+    }
+
+    public function kenya()
+    {
+        $Experiences = DB::table('experiences')->limit('12')->get();
+        return view('front.kenya', compact('Experiences'));
+    }
+
     public function conferencing()
     {
         return view('front.conferencing');

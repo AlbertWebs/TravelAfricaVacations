@@ -80,20 +80,12 @@
             </div>
             <ul class="menu-list">
 
-               <li class="menu-item-has-children">
-                  <a href="{{url('/')}}/destination" class="drop-down">Kenya Safaris</a><i class="bi bi-chevron-down dropdown-icon"></i>
-                  <ul class="sub-menu">
-                     <li><a href="{{url('/')}}/destination">Masai Mra</a></li>
-                     <li><a href="#">Coastal Tours</a></li>
-                     <li><a href="#">Tsavo Safaris</a></li>
-                     <li><a href="#">Nairobi City Excursions</a></li>
-                  </ul>
+               <li class="">
+                  <a href="{{url('/')}}/destinations/kenya" class="drop-down">Kenya Safaris</a>
+
                </li>
-               <li class="menu-item-has-children">
-                  <a href="#">Tanzania Safaris</a><i class="bi bi-chevron-down dropdown-icon"></i>
-                  <ul class="sub-menu">
-                     <li><a href="#">Serengeti</a></li>
-                  </ul>
+               <li class="">
+                  <a href="{{url('/')}}/destinations/tanzania">Tanzania Safaris</a>
                </li>
                <li class="menu-item-has-children">
                   <a href="blog-grid.html">Resources</a><i class="bi bi-chevron-down dropdown-icon"></i>
