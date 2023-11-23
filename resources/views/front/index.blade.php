@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="banner-section5">
-    {{-- <div class="banner-social-area">
+    <div class="banner-social-area">
        <div class="text-white">1</div>
        <div class="swiper-pagination-number d-flex flex-column align-items-center gap-5"></div>
        <ul class="banner-social gap-4">
@@ -11,7 +11,7 @@
           <li><a href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a></li>
           <li><a href="https://www.linkedin.com/"><i class="bx bxl-linkedin"></i></a></li>
        </ul>
-    </div> --}}
+    </div>
     <div class="swiper banner5-slider">
        <div class="swiper-wrapper">
           <div class="swiper-slide">

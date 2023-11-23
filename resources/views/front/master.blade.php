@@ -111,7 +111,7 @@
                      <li><a href="{{url('/')}}/travel-guide">Travel Guide</a></li>
                      <li><a href="{{url('/')}}/blog">Blogs & Media</a></li>
                      <li><a href="{{url('/')}}/conferencing">Conferencing</a></li>
-
+                     <li><a href="{{url('/')}}/conferencing">Plan My Safari</a></li>
                   </ul>
                </li>
                <li><a href="{{url('/')}}/contact-us">Contact Us</a></li>
