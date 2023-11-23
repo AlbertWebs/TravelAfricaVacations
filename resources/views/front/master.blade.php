@@ -18,6 +18,24 @@
       <link rel="stylesheet" href="{{asset('theme/assets/css/magnific-popup.css')}}">
       <link rel="stylesheet" href="{{asset('theme/assets/css/odometer.css')}}">
       <link rel="stylesheet" href="{{asset('theme/assets/css/style.css')}}">
+
+      <meta name="title" content="Travel Africa Vacations">
+      <meta name="description" content="Budget-friendly and tailor-made packages we can arrange your tour to your specifications to ensure comfort, satisfaction and a thrilling adventure">
+      <meta name="keywords" content="Masai Mara, Tsavo, Naivasha Tours">
+      <meta name="robots" content="index, follow">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="language" content="English">
+      <meta name="revisit-after" content="1 days">
+      <meta name="author" content="Designekta Studios">
+
+      {{-- OG --}}
+      <meta property="og:title" content=Travel Africa Vacations>
+      <meta property="og:site_name" content=Travel Africa Vacations>
+      <meta property="og:url" content=https://travelafricavacations.com/>
+      <meta property="og:description" content=Budget-friendly and tailor-made packages we can arrange your tour to your specifications to ensure comfort, satisfaction and a thrilling adventure>
+      <meta property="og:type" content="">
+      <meta property="og:image" content=https://vacations.venshaq.com/public/theme/assets/images/slider/home05/image01.jpg>
+
       @include('front.favicon')
    </head>
    <body>
@@ -126,5 +144,20 @@
       <script src="{{asset('theme/assets/js/jquery.magnific-popup.min.js')}}"></script>
       <script src="{{asset('theme/assets/js/isotope.pkgd.min.js')}}"></script>
       <script src="{{asset('theme/assets/js/main.js')}}"></script>
+      {{-- Schema Data --}}
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Travel Africa Vacations",
+          "url": "https://travelafricavacations.com/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://travelafricavacations.com/search{search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+        </script>
+      {{-- Schema Data --}}
    </body>
 </html>
