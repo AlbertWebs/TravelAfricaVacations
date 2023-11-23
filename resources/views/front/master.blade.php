@@ -34,7 +34,7 @@
       <meta property="og:url" content=https://travelafricavacations.com/>
       <meta property="og:description" content=Budget-friendly and tailor-made packages we can arrange your tour to your specifications to ensure comfort, satisfaction and a thrilling adventure>
       <meta property="og:type" content="">
-      <meta property="og:image" content=https://vacations.venshaq.com/public/theme/assets/images/slider/home05/image01.jpg>
+      <meta property="og:image" content=https://vacations.venshaq.com/public/uploads/Travel_Africa_W-01-removebg-preview.png>
 
       @include('front.favicon')
    </head>
