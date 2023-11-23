@@ -86,6 +86,10 @@ class HomeController extends Controller
         return view('front.privacy');
     }
 
+    public function plan()
+    {
+        return view('front.plan');
+    }
 
 
 }

@@ -28,6 +28,7 @@ Route::get('/conferencing', [App\Http\Controllers\HomeController::class, 'confer
 Route::get('/travel-guide', [App\Http\Controllers\HomeController::class, 'guide'])->name('travel-guide');
 Route::get('/destinations/{slung}', [App\Http\Controllers\HomeController::class, 'destination'])->name('destination');
 Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog'])->name('blog-us');
+Route::get('/plan-my-safari', [App\Http\Controllers\HomeController::class, 'plan'])->name('plan-my-safari');
 Route::get('/destination', [App\Http\Controllers\HomeController::class, 'destination'])->name('destination');
 Route::get('/copyright-statement', [App\Http\Controllers\HomeController::class, 'copyright'])->name('copyright-statement');
 Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'policy'])->name('privacy-policy');

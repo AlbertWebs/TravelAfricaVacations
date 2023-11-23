@@ -33,13 +33,13 @@
                   </div>
                   <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-lg-center">
                      <div class="footer-item">
-                        <h4>Destinations</h4>
+                        <h4>Quick Links</h4>
                         <ul class="link-list">
-                           <li><a href="#">Masai Mara</a></li>
-                           <li><a href="#">Coastal Tours</a></li>
-                           <li><a href="#">Tsavo Safaris</a></li>
-                           <li><a href="#">City Excursions</a></li>
-                           <li><a href="#">More</a></li>
+                           <li><a href="{{url('/')}}/home">Home</a></li>
+                           <li><a href="{{url('/')}}/destinations">Destinations</a></li>
+                           <li><a href="{{url('/')}}/destinations/kenya">Explore Kenya</a></li>
+                           <li><a href="{{url('/')}}/destinations/tanzania">Explore Tanzania</a></li>
+                           <li><a href="{{url('/')}}/plan-my-safari">Plan My Safari</a></li>
                         </ul>
                      </div>
                   </div>
