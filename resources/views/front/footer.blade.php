@@ -36,7 +36,7 @@
                         <h4>Quick Links</h4>
                         <ul class="link-list">
                            <li><a href="{{url('/')}}/home">Home</a></li>
-                           <li><a href="{{url('/')}}/destinations">Destinations</a></li>
+                           <li><a href="{{url('/')}}/destinations">Sample Safaris</a></li>
                            <li><a href="{{url('/')}}/destinations/kenya">Explore Kenya</a></li>
                            <li><a href="{{url('/')}}/destinations/tanzania">Explore Tanzania</a></li>
                            <li><a href="{{url('/')}}/plan-my-safari">Plan My Safari</a></li>

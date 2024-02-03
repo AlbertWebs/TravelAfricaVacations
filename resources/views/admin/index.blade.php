@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="wrap" >
-        
+
 
         <!-- HEADER SECTION -->
         @include('admin.top')
@@ -18,7 +18,7 @@
 
         <!--PAGE CONTENT -->
         <div id="content">
-             
+
             <div class="inner" style="min-height: 700px;">
                 <div class="row">
                     <div class="col-lg-12">
@@ -37,7 +37,7 @@
                   <!--END BLOCK SECTION -->
                 <hr />
                    <!-- CHART & CHAT  SECTION -->
-              
+
                  <!--END CHAT & CHAT SECTION -->
                  <!-- COMMENT AND NOTIFICATION  SECTION -->
                 <div class="row">
@@ -47,7 +47,7 @@
                             <div class="panel-heading">
                                 <i class="icon-envelope"></i>
                                 Messages
-                            
+
                             </div>
 
                             <div class="panel-body">
@@ -79,18 +79,18 @@
                                     </li>
                                 @endforeach
                                 @endif
-                                   
+
                                 </ul>
                             </div>
 
-                           
+
 
                         </div>
 
 
                     </div>
                     <div class="col-lg-6">
-                         
+
                        <div class="panel panel-danger">
                             <div class="panel-heading">
                                 <i class="icon-bell"></i> Notifications Alerts Panel
@@ -99,14 +99,14 @@
                             <div class="panel-body">
                             <?php
                                use App\Notifications;
-                               $Notification = DB::table('notifications')->paginate(7); 
-                               
-                               
+                               $Notification = DB::table('notifications')->paginate(7);
+
+
 
                             ?>
                                 <div class="list-group">
                                   @foreach($Notification as $notification)
-                                  
+
                                   <?php
                                   $Type = $notification->type;
                                   switch($Type) {
@@ -124,7 +124,7 @@
                                     case 'Quote':
                                        $Icon = 'ok';
                                        break;
-                                   
+
                                    default:
                                        $Icon= 'bell';
                                        break;
@@ -137,8 +137,8 @@
                                     </span>
                                     </a>
                                   @endforeach
-                                    
-                                   
+
+
                                 </div>
 
                                 <a href="{{url('/admin/notifications')}}" class="btn btn-default btn-block btn-primary">View All Alerts</a>
@@ -146,15 +146,15 @@
 
                         </div>
 
-                    
-                    
+
+
                     </div>
                 </div>
 
 
 
 
-                
+
             </div>
 
         </div>

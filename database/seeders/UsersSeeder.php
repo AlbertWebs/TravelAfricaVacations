@@ -15,13 +15,13 @@ class UsersSeeder extends Seeder
         $usersData = [
             [
                'name'   =>'Admin',
-               'email'  =>'admin@example.com',
+               'email'  =>'albertmuhatia@gmail.com',
                'is_admin' => 1,
                'password' => Hash::make('12345678')
             ],
             [
                'name'       => 'User',
-               'email'      => 'user@example.com',
+               'email'      => 'albertmuhatia58@gmail.com',
                'is_admin'   => 0,
                'password'   => Hash::make('12345678')
             ],

@@ -22,6 +22,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('homes');
 Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact-us');
 Route::get('/destinations', [App\Http\Controllers\HomeController::class, 'destinations'])->name('destinations');
+Route::get('/experiences/{slung}', [App\Http\Controllers\HomeController::class, 'experiences'])->name('experiences');
 Route::get('/destinations/kenya', [App\Http\Controllers\HomeController::class, 'kenya'])->name('kenya');
 Route::get('/destinations/tanzania', [App\Http\Controllers\HomeController::class, 'tanzania'])->name('tanzania');
 Route::get('/conferencing', [App\Http\Controllers\HomeController::class, 'conferencing'])->name('conferencing');
