@@ -128,7 +128,7 @@ use App\Question;
 
 use App\Event;
 
-use App\Destination;
+use App\Models\Destination;
 
 use App\Models\Experience;
 

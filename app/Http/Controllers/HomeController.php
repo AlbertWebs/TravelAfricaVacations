@@ -71,13 +71,13 @@ class HomeController extends Controller
 
     public function tanzania()
     {
-        $Experiences = DB::table('experiences')->where('country','2')->limit('12')->get();
+        $Experiences = DB::table('destinations')->where('country','2')->limit('12')->get();
         return view('front.tanzania' , compact('Experiences'));
     }
 
     public function kenya()
     {
-        $Experiences = DB::table('experiences')->where('country','1')->limit('12')->get();
+        $Experiences = DB::table('destinations')->where('country','1')->limit('12')->get();
         return view('front.kenya', compact('Experiences'));
     }
 
