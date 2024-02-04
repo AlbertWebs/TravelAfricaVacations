@@ -34,7 +34,7 @@
                      <span class="duration"><i class="bi bi-clock"></i>{{$Ex->duration}}</span>
                      <span class="rating"><i class="bi bi-geo-alt"></i>{{$Ex->location}}</span>
                   </div>
-                  <a href="{{url('/')}}/experiences/{{$Ex->slung}}" class="eg-btn btn--primary-outline btn--md">Explore Itinery</a>
+                  <a href="{{url('/')}}/sample-safaris/{{$Ex->slung}}" class="eg-btn btn--primary-outline btn--md">Explore Itinery</a>
                </div>
             </div>
          </div>

@@ -46,6 +46,18 @@ class HomeController extends Controller
         return view('front.experience', compact('Experiences'));
     }
 
+    public function samples()
+    {
+        $Experiences = DB::table('destinations')->get();
+        return view('front.destinations', compact('Experiences'));
+    }
+
+    public function sample($slung)
+    {
+        $Experiences = DB::table('destinations')->where('slung',$slung)->get();
+        return view('front.sample', compact('Experiences'));
+    }
+
 
     public function contact()
     {
@@ -55,14 +67,6 @@ class HomeController extends Controller
     public function blog()
     {
         return view('front.blog');
-    }
-
-
-
-    public function destinations()
-    {
-        $Experiences = DB::table('destinations')->get();
-        return view('front.destinations', compact('Experiences'));
     }
 
     public function tanzania()
