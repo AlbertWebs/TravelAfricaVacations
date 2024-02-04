@@ -3,7 +3,7 @@
 @section('content')
 @foreach ($Experiences as $Ex)
 {{--  --}}
-<div class="inner-banner-section sibling-2" style="background-image: url('{{url('/')}}/uploads/experiences/{{$Ex->image_one}}'); background-size: cover; background-repeat: no-repeat; min-height: 350px;">
+<div class="inner-banner-section sibling-2" style="background-image: url('{{url('/')}}/uploads/destinations/{{$Ex->image_one}}'); background-size: cover; background-repeat: no-repeat; min-height: 350px;">
     <img src="{{asset('theme/assets/images/bg/inner-banner-vctr.png')}}" class="inner-banner-vector" alt="image">
     <div class="container">
        <div class="row justify-content-center">
@@ -132,8 +132,8 @@
 
                             @else
                                 <div class="tour-gallery">
-                                    <a href="{{url('/')}}/uploads/experiences/{{$Ex->image_one}}" class="image-open">
-                                      <img src="{{url('/')}}/uploads/experiences/{{$Ex->image_one}}" class="img-fluid" alt="image">
+                                    <a href="{{url('/')}}/uploads/destinations/{{$Ex->image_one}}" class="image-open">
+                                      <img src="{{url('/')}}/uploads/destinations/{{$Ex->image_one}}" class="img-fluid" alt="image">
                                     </a>
                                 </div>
                             @endif
@@ -145,8 +145,8 @@
 
                             @else
                                 <div class="tour-gallery">
-                                    <a href="{{url('/')}}/uploads/experiences/{{$Ex->image_four}}" class="image-open">
-                                      <img src="{{url('/')}}/uploads/experiences/{{$Ex->image_four}}" class="img-fluid" alt="image">
+                                    <a href="{{url('/')}}/uploads/destinations/{{$Ex->image_four}}" class="image-open">
+                                      <img src="{{url('/')}}/uploads/destinations/{{$Ex->image_four}}" class="img-fluid" alt="image">
                                     </a>
                                 </div>
                             @endif
@@ -157,8 +157,8 @@
 
                             @else
                                 <div class="tour-gallery">
-                                    <a href="{{url('/')}}/uploads/experiences/{{$Ex->image_two}}" class="image-open">
-                                      <img src="{{url('/')}}/uploads/experiences/{{$Ex->image_two}}" class="img-fluid" alt="image">
+                                    <a href="{{url('/')}}/uploads/destinations/{{$Ex->image_two}}" class="image-open">
+                                      <img src="{{url('/')}}/uploads/destinations/{{$Ex->image_two}}" class="img-fluid" alt="image">
                                     </a>
                                 </div>
                             @endif
@@ -171,8 +171,8 @@
 
                             @else
                                 <div class="tour-gallery">
-                                    <a href="{{url('/')}}/uploads/experiences/{{$Ex->image_three}}" class="image-open">
-                                      <img src="{{url('/')}}/uploads/experiences/{{$Ex->image_three}}" class="img-fluid" alt="image">
+                                    <a href="{{url('/')}}/uploads/destinations/{{$Ex->image_three}}" class="image-open">
+                                      <img src="{{url('/')}}/uploads/destinations/{{$Ex->image_three}}" class="img-fluid" alt="image">
                                     </a>
                                 </div>
                             @endif
