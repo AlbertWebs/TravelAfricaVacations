@@ -44,12 +44,12 @@
                   <img style="min-height:230px" src="{{url('/')}}/uploads/destinations/{{$Ex->image_one}}" class="img-fluid" alt="{{$Ex->title}}">
                </div>
                <div class="content">
-                  <h4 style="height:70px !important;"><a href="{{url('/')}}/destinations/{{$Ex->slung}}">{{$Ex->title}}</a></h4>
+                  <h4 style="height:70px !important;"><a href="{{url('/')}}/sample-safaris/{{$Ex->slung}}">{{$Ex->title}}</a></h4>
                   <div class="best-plan-meta">
                      <span class="duration"><i class="bi bi-clock"></i>{{$Ex->duration}}</span>
                      <span class="rating"><i class="bi bi-geo-alt"></i>{{$Ex->location}}</span>
                   </div>
-                  <a href="{{url('/')}}/destinations/{{$Ex->slung}}" class="eg-btn btn--primary-outline btn--md">Explore Itinery</a>
+                  <a href="{{url('/')}}/sample-safaris/{{$Ex->slung}}" class="eg-btn btn--primary-outline btn--md">Explore Itinery</a>
                </div>
             </div>
          </div>
