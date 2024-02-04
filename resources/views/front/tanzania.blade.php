@@ -43,7 +43,7 @@
           <div class="col-lg-4 col-md-6 col-sm-12" >
             <div class="best-plan-single1" style="border:3px solid #666666">
                <div class="image">
-                  <img style="min-height:230px" src="{{url('/')}}/uploads/destinations/{{$Ex->image_one}}" class="img-fluid" alt="{{$Ex->title}}">
+                  <img style="min-height:280px" src="{{url('/')}}/uploads/destinations/{{$Ex->image_one}}" class="img-fluid" alt="{{$Ex->title}}">
                </div>
                <div class="content">
                   <h4 style="height:70px !important;"><a href="{{url('/')}}/sample-safaris/{{$Ex->slung}}">{{$Ex->title}}</a></h4>
