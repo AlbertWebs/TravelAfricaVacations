@@ -52,7 +52,7 @@
                                  <i class="bi bi-telephone"></i>
                               </div>
                               <div class="text">
-                                 <a href="tel:+254 733 263 685">+254 733 263 685</a>
+                                 <a href="tel:+254 722 552 749">+254 722 552 749</a>
                                  <a href="tel:+254 733 263 685">+254 733 263 685</a>
                               </div>
                            </li>

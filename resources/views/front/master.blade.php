@@ -58,7 +58,7 @@
                </div>
                <div class="number">
                   <span>Call Now</span>
-                  <h5><a href="tel:+254 733 263 685">+254 733 263 685</a></h5>
+                  <h5><a href="tel:+254 722 552 749">+254 722 552 749</a></h5>
                </div>
             </div>
             <div class="phone-call sibling3 justify-content-start align-items-center flex-row d-xxl-flex d-none">
@@ -126,7 +126,7 @@
                </div>
                <div class="number">
                   <span>Call Now</span>
-                  <h5><a href="tel: +254 733 263 685"> +254 733 263 685</a></h5>
+                  <h5><a href="tel: +254 722 552 749"> +254 722 552 749</a></h5>
                </div>
             </div>
             <a href="#" class="eg-btn btn--primary3 btn--lg d-xl-none d-flex mt-5">Book A Trip</a>
