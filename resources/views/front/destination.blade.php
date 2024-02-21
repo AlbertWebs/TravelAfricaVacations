@@ -96,6 +96,13 @@
                       </ul>
                       <p>
                         {!!html_entity_decode($Ex->content)!!}
+
+                        <br><br>
+
+                            <p>
+                                Each of our meticulously curated tour packages ensures a personalized experience with a diverse range of accommodation options. Whether you prefer the opulence of a <span style="font-weight: bold; color: #FFD700;">luxurious</span> stay, the cozy embrace of <span style="font-weight: bold; color: #32CD32;">comfort</span>, or the practicality of an <span style="font-weight: bold; color: #4682B4;">economical</span> choice, we cater to your distinct preferences. Our commitment to providing a spectrum of lodging alternatives allows you to tailor your journey according to your individual taste and budget, ensuring that every aspect of your trip aligns perfectly with your expectations and desires.
+
+                            </p>
                       </p>
                    </div>
                 </div>
