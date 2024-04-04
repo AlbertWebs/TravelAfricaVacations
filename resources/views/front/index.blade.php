@@ -304,66 +304,9 @@
     </div>
  </div>
 
- <div class="blog-section pt-120 pb-120 overflow-hidden">
-    <div class="container">
-       <div class="row justify-content-center">
-          <div class="col-xl-6 col-lg-8 col-md-12">
-             <div class="section-title5 text-center">
-                <img src="{{asset('theme/assets/images/icons/sec-title-vector3.svg')}}" alt="image">
-                <span>Blog</span>
-                <h2>Our Latest News <span>& Articles!</span></h2>
-                <p>Exclusive Deals, Central Locations! Search & Book Cheap Hotels Online. Nexte Right Property for You.</p>
-             </div>
-          </div>
-       </div>
-       <div class="row gy-5 justify-content-center">
-          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-10">
-             <div class="blog-single2 sibling-2">
-                <div class="image">
-                   <img src="{{asset('theme/assets/images/blog/blog52.png')}}" class="img-fluid" alt="image">
-                </div>
-                <div class="content">
-                   <div class="blog-date">
-                      <i class="bi bi-calendar-check"></i><span>Augest 18, 2022</span>
-                   </div>
-                   <h5><a href="blog-details.html">Scottish ‘Great Wood’ from a real world legendary.</a></h5>
-                   <a href="blog-details.html"><i class="bi bi-arrow-right"></i></a>
-                </div>
-             </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-10">
-             <div class="blog-single2 sibling-2">
-                <div class="image">
-                   <img src="{{asset('theme/assets/images/blog/blog51.png')}}" class="img-fluid" alt="image">
-                </div>
-                <div class="content">
-                   <div class="blog-date">
-                      <i class="bi bi-calendar-check"></i><span>January 8, 2022</span>
-                   </div>
-                   <h5><a href="blog-details.html">Amazing underwater photographers everyone</a></h5>
-                   <a href="blog-details.html"><i class="bi bi-arrow-right"></i></a>
-                </div>
-             </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-10">
-             <div class="blog-single2 sibling-2">
-                <div class="image">
-                   <img src="{{asset('theme/assets/images/blog/blog53.png')}}" class="img-fluid" alt="image">
-                </div>
-                <div class="content">
-                   <div class="blog-date">
-                      <i class="bi bi-calendar-check"></i><span>Augest 28, 2022</span>
-                   </div>
-                   <h5><a href="blog-details.html">Scottish ‘Great Wood’ from a real world legendary.</a></h5>
-                   <a href="blog-details.html"><i class="bi bi-arrow-right"></i></a>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
- </div>
+
  <div class="instagram-feed-section">
-    <div class="container">
+    {{-- <div class="container">
        <div class="row justify-content-lg-start justify-content-center">
           <div class="col-lg-4">
              <div class="section-title-small text-lg-start text-center">
@@ -371,7 +314,7 @@
              </div>
           </div>
        </div>
-    </div>
+    </div> --}}
     <div class="container-fluid px-0">
        <div class="swiper insta-feed-slider">
           <div class="swiper-wrapper">
