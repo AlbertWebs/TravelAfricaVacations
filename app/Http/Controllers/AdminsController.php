@@ -588,7 +588,7 @@ class AdminsController extends Controller
         $path = 'uploads/admins';
         if($request->email == Auth::user()->email ){
             if(isset($request->image)){
-                $fileSize = $request->file('image')->getClientSize();
+                $fileSize = $request->file('image')->getSize();
                 if($fileSize>=1800000){
                    Session::flash('message', "File Exceeded the maximum allowed Size");
                    Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -624,7 +624,7 @@ class AdminsController extends Controller
             return Redirect::back();
         }else{
             if(isset($request->image)){
-                $fileSize = $request->file('image')->getClientSize();
+                $fileSize = $request->file('image')->getSize();
                 if($fileSize>=1800000){
                    Session::flash('message', "File Exceeded the maximum allowed Size");
                    Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -837,7 +837,7 @@ class AdminsController extends Controller
 
         $path = 'uploads/pages';
         if(isset($request->image_one)){
-            $fileSize = $request->file('image_one')->getClientSize();
+            $fileSize = $request->file('image_one')->getSize();
                 if($fileSize>=1800000){
                 Session::flash('message', "File Exceeded the maximum allowed Size");
                 Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -857,7 +857,7 @@ class AdminsController extends Controller
         }
 
         if(isset($request->image_two)){
-            $fileSize = $request->file('image_two')->getClientSize();
+            $fileSize = $request->file('image_two')->getSize();
              if($fileSize>=1800000){
                 Session::flash('message', "File Exceeded the maximum allowed Size");
                 Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -878,7 +878,7 @@ class AdminsController extends Controller
 
 
         if(isset($request->image_three)){
-            $fileSize = $request->file('image_three')->getClientSize();
+            $fileSize = $request->file('image_three')->getSize();
             if($fileSize>=1800000){
                Session::flash('message', "File Exceeded the maximum allowed Size");
                Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -899,7 +899,7 @@ class AdminsController extends Controller
         //Additional images
 
         if(isset($request->image_four)){
-            $fileSize = $request->file('image_four')->getClientSize();
+            $fileSize = $request->file('image_four')->getSize();
             if($fileSize>=1800000){
                Session::flash('message', "File Exceeded the maximum allowed Size");
                Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -921,7 +921,7 @@ class AdminsController extends Controller
 
 
         if(isset($request->image_five)){
-            $fileSize = $request->file('image_five')->getClientSize();
+            $fileSize = $request->file('image_five')->getSize();
             if($fileSize>=1800000){
                Session::flash('message', "File Exceeded the maximum allowed Size");
                Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -995,7 +995,7 @@ class AdminsController extends Controller
     public function edit_Page(Request $request, $id){
         $path = 'uploads/pages';
         if(isset($request->image_one)){
-            $fileSize = $request->file('image_one')->getClientSize();
+            $fileSize = $request->file('image_one')->getSize();
                 if($fileSize>=1800000){
                 Session::flash('message', "File Exceeded the maximum allowed Size");
                 Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1015,7 +1015,7 @@ class AdminsController extends Controller
         }
 
         if(isset($request->image_two)){
-            $fileSize = $request->file('image_two')->getClientSize();
+            $fileSize = $request->file('image_two')->getSize();
              if($fileSize>=1800000){
                 Session::flash('message_image_two', "File Exceeded the maximum allowed Size");
                 Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1036,7 +1036,7 @@ class AdminsController extends Controller
 
 
         if(isset($request->image_three)){
-            $fileSize = $request->file('image_three')->getClientSize();
+            $fileSize = $request->file('image_three')->getSize();
             if($fileSize>=1800000){
                Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
                Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1057,7 +1057,7 @@ class AdminsController extends Controller
         //Additional images
 
         if(isset($request->image_four)){
-            $fileSize = $request->file('image_four')->getClientSize();
+            $fileSize = $request->file('image_four')->getSize();
             if($fileSize>=1800000){
                Session::flash('message_image_four', "File Exceeded the maximum allowed Size");
                Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1079,7 +1079,7 @@ class AdminsController extends Controller
 
 
         if(isset($request->image_five)){
-            $fileSize = $request->file('image_five')->getClientSize();
+            $fileSize = $request->file('image_five')->getSize();
             if($fileSize>=1800000){
                Session::flash('message_image_five', "File Exceeded the maximum allowed Size");
                Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1259,7 +1259,7 @@ public function add_Product(Request $request){
 
     $path = 'uploads/product';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1279,7 +1279,7 @@ public function add_Product(Request $request){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1300,7 +1300,7 @@ public function add_Product(Request $request){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1360,7 +1360,7 @@ public function editProduct($id){
 public function edit_Product(Request $request, $id){
     $path = 'uploads/product';
     if(isset($request->image)){
-        $fileSize = $request->file('image')->getClientSize();
+        $fileSize = $request->file('image')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1380,7 +1380,7 @@ public function edit_Product(Request $request, $id){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=1800000){
             Session::flash('message_image_two', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1401,7 +1401,7 @@ public function edit_Product(Request $request, $id){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1464,7 +1464,7 @@ public function add_Service(Request $request){
 
     $path = 'uploads/services';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1484,7 +1484,7 @@ public function add_Service(Request $request){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=1800000){
             Session::flash('message_image_two', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1505,7 +1505,7 @@ public function add_Service(Request $request){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1555,7 +1555,7 @@ public function editServices($id){
 public function edit_Services(Request $request, $id){
     $path = 'uploads/services';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1575,7 +1575,7 @@ public function edit_Services(Request $request, $id){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=1800000){
             Session::flash('message_image_two', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1596,7 +1596,7 @@ public function edit_Services(Request $request, $id){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1646,7 +1646,7 @@ public function add_Portfolio(Request $request){
 
     $path = 'uploads/portfolio';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1666,7 +1666,7 @@ public function add_Portfolio(Request $request){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1687,7 +1687,7 @@ public function add_Portfolio(Request $request){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1708,7 +1708,7 @@ public function add_Portfolio(Request $request){
     //Additional images
 
     if(isset($request->image_four)){
-        $fileSize = $request->file('image_four')->getClientSize();
+        $fileSize = $request->file('image_four')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1730,7 +1730,7 @@ public function add_Portfolio(Request $request){
 
 
     if(isset($request->image_five)){
-        $fileSize = $request->file('image_five')->getClientSize();
+        $fileSize = $request->file('image_five')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1785,7 +1785,7 @@ public function editPortfolio($id){
 public function edit_Portfolio(Request $request, $id){
     $path = 'uploads/portfolio';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1805,7 +1805,7 @@ public function edit_Portfolio(Request $request, $id){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=1800000){
             Session::flash('message_image_two', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1826,7 +1826,7 @@ public function edit_Portfolio(Request $request, $id){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1847,7 +1847,7 @@ public function edit_Portfolio(Request $request, $id){
     //Additional images
 
     if(isset($request->image_four)){
-        $fileSize = $request->file('image_four')->getClientSize();
+        $fileSize = $request->file('image_four')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_four', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -1869,7 +1869,7 @@ public function edit_Portfolio(Request $request, $id){
 
 
     if(isset($request->image_five)){
-        $fileSize = $request->file('image_five')->getClientSize();
+        $fileSize = $request->file('image_five')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_five', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2051,7 +2051,7 @@ public function add_Testimonial(Request $request){
 
     $path = 'uploads/testimonials';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2108,7 +2108,7 @@ public function editTestimonial($id){
 public function edit_Testimonial(Request $request, $id){
     $path = 'uploads/testimonials';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2271,7 +2271,7 @@ public function add_Blog(Request $request){
     $category = $request->cat;
     $path = 'uploads/blog';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2291,7 +2291,7 @@ public function add_Blog(Request $request){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2312,7 +2312,7 @@ public function add_Blog(Request $request){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2333,7 +2333,7 @@ public function add_Blog(Request $request){
     //Additional images
 
     if(isset($request->image_four)){
-        $fileSize = $request->file('image_four')->getClientSize();
+        $fileSize = $request->file('image_four')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2401,7 +2401,7 @@ public function editBlog($id){
 public function edit_Blog(Request $request, $id){
     $path = 'uploads/blog';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2421,7 +2421,7 @@ public function edit_Blog(Request $request, $id){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=1800000){
             Session::flash('message_image_two', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2442,7 +2442,7 @@ public function edit_Blog(Request $request, $id){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2463,7 +2463,7 @@ public function edit_Blog(Request $request, $id){
     //Additional images
 
     if(isset($request->image_four)){
-        $fileSize = $request->file('image_four')->getClientSize();
+        $fileSize = $request->file('image_four')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_four', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2746,7 +2746,7 @@ public function addMaterial(){
 public function add_material(Request $request){
     $path = 'uploads/file';
     if(isset($request->pdf)){
-        $fileSize = $request->file('pdf')->getClientSize();
+        $fileSize = $request->file('pdf')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2826,7 +2826,7 @@ public function edit_curriculum(Request $request,$id){
 public function edit_material(Request $request,$id){
     $path = 'uploads/file';
     if(isset($request->pdf)){
-        $fileSize = $request->file('pdf')->getClientSize();
+        $fileSize = $request->file('pdf')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2994,7 +2994,7 @@ public function edit_Cert(Request $request, $id){
     $path = 'uploads/certificates';
 
         if(isset($request->image)){
-            $fileSize = $request->file('image')->getClientSize();
+            $fileSize = $request->file('image')->getSize();
             if($fileSize>=1800000){
                Session::flash('message', "File Exceeded the maximum allowed Size");
                Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -3071,7 +3071,7 @@ public function add_Topic(Request $request){
     // Process Files
     $path = 'uploads/file';
     if(isset($request->pdf)){
-        $fileSize = $request->file('pdf')->getClientSize();
+        $fileSize = $request->file('pdf')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -3140,7 +3140,7 @@ public function editLesson($id){
 public function edit_topic(Request $request, $id){
     $path = 'uploads/file';
     if(isset($request->pdf)){
-        $fileSize = $request->file('pdf')->getClientSize();
+        $fileSize = $request->file('pdf')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -3316,7 +3316,7 @@ public function add_Event(Request $request){
     $category = $request->cat;
     $path = 'uploads/events';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -3373,7 +3373,7 @@ public function editEvent($id){
 public function edit_Event(Request $request, $id){
     $path = 'uploads/events';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -3792,8 +3792,6 @@ public function editExperience($id){
 public function edit_Experience(Request $request, $id){
     $path = 'uploads/experiences';
     if(isset($request->image_one)){
-
-
             $file = $request->file('image_one');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
@@ -3801,13 +3799,12 @@ public function edit_Experience(Request $request, $id){
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_one = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_one);
-
     }else{
         $image_one = $request->image_one_cheat;
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=1800000){
             Session::flash('message_image_two', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -3828,7 +3825,7 @@ public function edit_Experience(Request $request, $id){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -3848,7 +3845,7 @@ public function edit_Experience(Request $request, $id){
     }
 
     if(isset($request->image_four)){
-        $fileSize = $request->file('image_four')->getClientSize();
+        $fileSize = $request->file('image_four')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -3868,7 +3865,7 @@ public function edit_Experience(Request $request, $id){
     }
 
     if(isset($request->image_five)){
-        $fileSize = $request->file('image_five')->getClientSize();
+        $fileSize = $request->file('image_five')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -3888,7 +3885,7 @@ public function edit_Experience(Request $request, $id){
     }
 
     if(isset($request->image_six)){
-        $fileSize = $request->file('image_six')->getClientSize();
+        $fileSize = $request->file('image_six')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4013,7 +4010,7 @@ public function add_Hotel(Request $request){
 
     $path = 'uploads/hotels';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4033,7 +4030,7 @@ public function add_Hotel(Request $request){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4054,7 +4051,7 @@ public function add_Hotel(Request $request){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4074,7 +4071,7 @@ public function add_Hotel(Request $request){
     }
 
     if(isset($request->image_four)){
-        $fileSize = $request->file('image_four')->getClientSize();
+        $fileSize = $request->file('image_four')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4095,7 +4092,7 @@ public function add_Hotel(Request $request){
     //Additional images
     //Additional images
     if(isset($request->image_six)){
-        $fileSize = $request->file('image_six')->getClientSize();
+        $fileSize = $request->file('image_six')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4115,7 +4112,7 @@ public function add_Hotel(Request $request){
     }
     //Additional images
     if(isset($request->image_five)){
-        $fileSize = $request->file('image_five')->getClientSize();
+        $fileSize = $request->file('image_five')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4173,7 +4170,7 @@ public function editHotel($id){
 public function edit_Hotel(Request $request, $id){
     $path = 'uploads/hotels';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4193,7 +4190,7 @@ public function edit_Hotel(Request $request, $id){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=1800000){
             Session::flash('message_image_two', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4214,7 +4211,7 @@ public function edit_Hotel(Request $request, $id){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4234,7 +4231,7 @@ public function edit_Hotel(Request $request, $id){
     }
 
     if(isset($request->image_four)){
-        $fileSize = $request->file('image_four')->getClientSize();
+        $fileSize = $request->file('image_four')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4255,7 +4252,7 @@ public function edit_Hotel(Request $request, $id){
 
 
     if(isset($request->image_five)){
-        $fileSize = $request->file('image_five')->getClientSize();
+        $fileSize = $request->file('image_five')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4275,7 +4272,7 @@ public function edit_Hotel(Request $request, $id){
     }
 
     if(isset($request->image_six)){
-        $fileSize = $request->file('image_six')->getClientSize();
+        $fileSize = $request->file('image_six')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4343,7 +4340,7 @@ public function add_Room(Request $request){
 
     $path = 'uploads/rooms';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4363,7 +4360,7 @@ public function add_Room(Request $request){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4384,7 +4381,7 @@ public function add_Room(Request $request){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4404,7 +4401,7 @@ public function add_Room(Request $request){
     }
 
     if(isset($request->image_four)){
-        $fileSize = $request->file('image_four')->getClientSize();
+        $fileSize = $request->file('image_four')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4467,7 +4464,7 @@ public function editRoom($id){
 public function edit_Room(Request $request, $id){
     $path = 'uploads/rooms';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4487,7 +4484,7 @@ public function edit_Room(Request $request, $id){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=1800000){
             Session::flash('message_image_two', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4508,7 +4505,7 @@ public function edit_Room(Request $request, $id){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4528,7 +4525,7 @@ public function edit_Room(Request $request, $id){
     }
 
     if(isset($request->image_four)){
-        $fileSize = $request->file('image_four')->getClientSize();
+        $fileSize = $request->file('image_four')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4595,7 +4592,7 @@ public function add_Guide(Request $request){
 
     $path = 'uploads/guides';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4657,7 +4654,7 @@ public function editGuide($id){
 public function edit_Guide(Request $request, $id){
     $path = 'uploads/guides';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4881,7 +4878,7 @@ public function add_Car(Request $request){
 
     $path = 'uploads/Cars';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4901,7 +4898,7 @@ public function add_Car(Request $request){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4922,7 +4919,7 @@ public function add_Car(Request $request){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4942,7 +4939,7 @@ public function add_Car(Request $request){
     }
 
     if(isset($request->image_four)){
-        $fileSize = $request->file('image_four')->getClientSize();
+        $fileSize = $request->file('image_four')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4962,7 +4959,7 @@ public function add_Car(Request $request){
     }
     //Additional images
     if(isset($request->image_six)){
-        $fileSize = $request->file('image_six')->getClientSize();
+        $fileSize = $request->file('image_six')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -4982,7 +4979,7 @@ public function add_Car(Request $request){
     }
     //Additional images
     if(isset($request->image_five)){
-        $fileSize = $request->file('image_five')->getClientSize();
+        $fileSize = $request->file('image_five')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -5069,7 +5066,7 @@ public function editCar($id){
 public function edit_Car(Request $request, $id){
     $path = 'uploads/Cars';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -5089,7 +5086,7 @@ public function edit_Car(Request $request, $id){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=1800000){
             Session::flash('message_image_two', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -5110,7 +5107,7 @@ public function edit_Car(Request $request, $id){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -5130,7 +5127,7 @@ public function edit_Car(Request $request, $id){
     }
 
     if(isset($request->image_four)){
-        $fileSize = $request->file('image_four')->getClientSize();
+        $fileSize = $request->file('image_four')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -5150,7 +5147,7 @@ public function edit_Car(Request $request, $id){
     }
 
     if(isset($request->image_five)){
-        $fileSize = $request->file('image_five')->getClientSize();
+        $fileSize = $request->file('image_five')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -5170,7 +5167,7 @@ public function edit_Car(Request $request, $id){
     }
 
     if(isset($request->image_six)){
-        $fileSize = $request->file('image_six')->getClientSize();
+        $fileSize = $request->file('image_six')->getSize();
         if($fileSize>=1800000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -5332,7 +5329,7 @@ public function add_Transfer(Request $request){
     $path = 'uploads/transfers';
 
         if(isset($request->image)){
-            $fileSize = $request->file('image')->getClientSize();
+            $fileSize = $request->file('image')->getSize();
             if($fileSize>=1800000){
                Session::flash('message', "File Exceeded the maximum allowed Size");
                Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -5383,7 +5380,7 @@ public function edit_Transfer(Request $request, $id){
     $path = 'uploads/transfers';
 
         if(isset($request->image)){
-            $fileSize = $request->file('image')->getClientSize();
+            $fileSize = $request->file('image')->getSize();
             if($fileSize>=1800000){
                Session::flash('message', "File Exceeded the maximum allowed Size");
                Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -5522,7 +5519,7 @@ public function add_Sample(Request $request){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=1800000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -5543,7 +5540,7 @@ public function add_Sample(Request $request){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -5563,7 +5560,7 @@ public function add_Sample(Request $request){
     }
 
     if(isset($request->image_four)){
-        $fileSize = $request->file('image_four')->getClientSize();
+        $fileSize = $request->file('image_four')->getSize();
         if($fileSize>=1800000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
