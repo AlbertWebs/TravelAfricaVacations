@@ -3912,14 +3912,6 @@ public function edit_Experience(Request $request, $id){
     $Fuel->save();
     }
 
-    $CheckDuration = DB::table('durations')->where('name',$request->duration)->get();
-    if(count($CheckDuration) == 0){
-    // Add Model
-    $Fuel = new Duration;
-    $Fuel->name = $request->duration;
-    $Fuel->save();
-    }
-
 
 
     $updateDetails = array(
