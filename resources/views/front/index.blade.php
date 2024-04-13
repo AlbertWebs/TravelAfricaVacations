@@ -27,7 +27,7 @@
        </div>
     </div>
  </div>
- <div class="wild-package-section pt-120 pb-120" id="safari-section">
+ {{-- <div class="wild-package-section pt-120 pb-120" id="safari-section">
     <div class="container">
        <div class="row mb-60">
           <div class="col-md-8">
@@ -136,7 +136,8 @@
           </div>
        </div>
     </div>
- </div>
+ </div> --}}
+ <br><br>
  <div class="about-section pb-120">
     <div class="container">
        <div class="row align-items-center mb-40">
