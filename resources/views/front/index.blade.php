@@ -144,7 +144,7 @@
              <div class="about5-title">
                 <span>Welcome to Travel Africa Vacations</span>
                 <h2>We make your Safaris <span>Memorable!</span></h2>
-                <p>Book the Best Safari Tours Destinations in 2021 right here. Find Kenya’s top 20 amazing tour packages at cheaper rates. Get most popular tours and budget friendly packages. We got the best negotiated tour packages and unique collections of tours in East Africa.</p>
+                <p>Book the Best Safari Tours Destinations in {{date('Y')}} right here. Find Kenya’s top 20 amazing tour packages at cheaper rates. Get most popular tours and budget friendly packages. We got the best negotiated tour packages and unique collections of tours in East Africa.</p>
                 <a href="tel:+ +254 733 263 685">Direct Call + +254 733 263 685</a>
              </div>
           </div>
