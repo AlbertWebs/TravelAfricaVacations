@@ -20,7 +20,7 @@
                 <span>Experience Africa Vacations</span>
                 <h2>Leave Nothing But Your Footsteps</h2>
                 <p>As a premier travel company, we specialize in crafting unforgettable experiences that seamlessly blend adventure, luxury, and cultural immersion. Our passion for Africa's breathtaking landscapes, vibrant communities, and unique wildlife drives us to curate bespoke itineraries tailored to your preferences. </p>
-                <a href="{{url('/')}}/destination" class="eg-btn btn--primary3 btn--lg">Explore Safari</a>
+                <a href="{{url('/')}}/destinations/kenya" class="eg-btn btn--primary3 btn--lg">Explore Safari</a>
              </div>
           </div>
 
@@ -305,8 +305,8 @@
  </div>
 
 
- <div class="instagram-feed-section">
-    {{-- <div class="container">
+ {{-- <div class="instagram-feed-section">
+    <div class="container">
        <div class="row justify-content-lg-start justify-content-center">
           <div class="col-lg-4">
              <div class="section-title-small text-lg-start text-center">
@@ -314,7 +314,7 @@
              </div>
           </div>
        </div>
-    </div> --}}
+    </div>
     <div class="container-fluid px-0">
        <div class="swiper insta-feed-slider">
           <div class="swiper-wrapper">
@@ -351,5 +351,5 @@
           </div>
        </div>
     </div>
- </div>
+ </div> --}}
 @endsection
