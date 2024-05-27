@@ -35,7 +35,7 @@ Route::get('/plan-my-safari', [App\Http\Controllers\HomeController::class, 'plan
 Route::get('/destination', [App\Http\Controllers\HomeController::class, 'destination'])->name('destination');
 Route::get('/copyright-statement', [App\Http\Controllers\HomeController::class, 'copyright'])->name('copyright-statement');
 Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'policy'])->name('privacy-policy');
-
+Route::get('/thank-you', [App\Http\Controllers\HomeController::class, 'thank'])->name('thank-you');
 
 Auth::routes();
 // Route::middleware(['auth', 'user-access:admin'])->group(function () {

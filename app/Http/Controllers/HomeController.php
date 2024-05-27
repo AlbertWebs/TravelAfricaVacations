@@ -69,6 +69,13 @@ class HomeController extends Controller
         return view('front.blog');
     }
 
+    public function thank()
+    {
+        return view('front.thank');
+    }
+
+
+
     public function tanzania()
     {
         $Experiences = DB::table('destinations')->where('country','2')->limit('12')->get();

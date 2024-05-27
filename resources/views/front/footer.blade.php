@@ -52,10 +52,18 @@
                                  <i class="bi bi-telephone"></i>
                               </div>
                               <div class="text">
-                                 <a href="tel:+254 722 552 749">+254 722 552 749</a>
+                                 <a href="tel:+254 733 263 685">+254 733 263 685</a>
                                  <a href="tel:+254 733 263 685">+254 733 263 685</a>
                               </div>
                            </li>
+                           <li>
+                            <div class="icon">
+                               <i class="bi bi-whatsapp"></i>
+                            </div>
+                            <div class="text">
+                               <a href="https://wa.me/+254733263685?text='Hello, I have an Inquiry'">+254 733 263 685</a>
+                            </div>
+                         </li>
                            <li>
                               <div class="icon">
                                  <i class="bi bi-envelope"></i>
@@ -70,7 +78,7 @@
                                  <i class="bi bi-geo-alt"></i>
                               </div>
                               <div class="text">
-                                 Chalbi Condomononiums, Ring Road, Kilimani
+                                Nairobi, Kenya.
                               </div>
                            </li>
                         </ul>

@@ -516,13 +516,13 @@
                       </div>
                    </div>
                    <div class="search-box-single">
-                      <div class="searchbox-icon">
-                         <i class="bi bi-tags-fill"></i>
-                      </div>
-                      <div class="searchbox-input">
-                         <input type="number" placeholder="Number of tickets *">
-                      </div>
-                   </div>
+                    <div class="searchbox-icon">
+                       <i class="bi bi-map-marker"></i>
+                    </div>
+                    <div class="searchbox-input">
+                       <input type="text" placeholder="Country *">
+                    </div>
+                 </div>
                    <div class="search-box-single">
                       <div class="searchbox-icon">
                          <i class="bi bi-chat-left-text-fill"></i>
